@@ -9,5 +9,8 @@ def config():
 
   return config
 
-def news_sites():
+def get_news_sites():
   return config()['news_sites']
+
+def get_news_site(uid):
+  return config()['news_sites'][uid]
